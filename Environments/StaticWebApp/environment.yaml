@@ -1,0 +1,21 @@
+name: Private Static Web App
+summary: This is a deployment of an Azure Static Web App.
+description: Deploys a Static Web App with Private Endpoint
+templatePath: main.bicep
+parameters:
+- id: "appName"
+  name: "Name of the static web app"
+  description: "Unique name for the application"
+  type: "string"
+  default: ""
+- id: "location"
+  name: "Azure region"
+  description: "Region to deploy the Static Web App"
+  type: "string"
+  default: "eastus"
+  allowed:
+    - "eastus2"
+    - "westus"
+    - "eastus"
+
+runner: Bicep
