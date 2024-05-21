@@ -1,4 +1,4 @@
-name: Private Static Web App
+name: PrivateStaticWebApp
 summary: This is a deployment of an Azure Static Web App.
 description: Deploys a Static Web App with Private Endpoint
 templatePath: main.bicep
